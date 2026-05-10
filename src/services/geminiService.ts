@@ -21,7 +21,7 @@ export const analyzeLogic = async (text: string): Promise<AnalysisResult> => {
     `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-1.5-flash",
+      model: "gemini-1.5-flash-latest",
       contents: [{ role: "user", parts: [{ text: analysisPrompt }] }],
       config: {
         responseMimeType: "application/json",
